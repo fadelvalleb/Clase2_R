@@ -1,0 +1,22 @@
+---
+title: "Ejemplo_R_Markdown"
+author: "FDV"
+date: "5 de septiembre de 2019"
+output: html_document
+---
+
+# Este es mi primer chunk
+
+Abajo debería mostrarse una tabla
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE} 
+
+                    #echo false y warning false sirven para no mostrar los comentarios
+
+library(tidyverse) #cargué tidyverse
+
+data("iris") #acá se cargó la base de datos
+
+head(iris) #acá se muestra la primera tabla
+```
+
